@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Calculator</title>
+    <link rel="stylesheet" href="cal.css">
+</head>
+
+<body>
+    <div class="Calculator">
+        <div class="display">
+            <input type="text" id="inputBox" placeholder="0">
+        </div>
+
+        <d class="row">
+            <button onclick="document.getElementById('inputBox').value = ''" class="opr ac">AC</button>
+            <button onclick="backspace()" class="opr"><i
+                    class="fa-solid fa-delete-left"></i></button>
+            <button onclick="document.getElementById('inputBox').value += '%'" class="opr">%</button>
+            <button onclick="document.getElementById('inputBox').value += '/'" class="opr">/</button>
+
+            <div class="row">
+                <button onclick="document.getElementById('inputBox').value += 7">7</button>
+                <button onclick="document.getElementById('inputBox').value += 8">8</button>
+                <button onclick="document.getElementById('inputBox').value += 9">9</button>
+                <button onClick="document.getElementById('inputBox').value += '*'" class="opr">*</button>
+                </div>
+            <div class="row">
+                <button onclick="document.getElementById('inputBox').value += 4">4</button>
+                <button onclick="document.getElementById('inputBox').value += 5">5</button>
+                <button onclick="document.getElementById('inputBox').value += 6">6</button>
+                <button onclick="document.getElementById('inputBox').value += '-'" class="opr">-</button>
+            </div>
+            <div class="row">
+                <button onclick="document.getElementById('inputBox').value += 1">1</button>
+                <button onclick="document.getElementById('inputBox').value += 2">2</button>
+                <button onclick="document.getElementById('inputBox').value += 3">3</button>
+                <button onclick="document.getElementById('inputBox').value += '+'" class="opr">+</button>
+            </div>
+            <div class="row">
+                <button onclick="document.getElementById('inputBox').value += '.'">.</button>
+                <button onclick="document.getElementById('inputBox').value += 0">0</button>
+                <button
+                    onclick="document.getElementById('inputBox').value = eval(document.getElementById('inputBox').value)"
+                    class="opr-eql">=</button>
+            </div>
+
+
+        </div>
+        <script src="https://kit.fontawesome.com/2b1be9e421.js" crossorigin="anonymous"></script>
+        <script>
+            function backspace() {
+                const inputBox = document.getElementById('inputBox');
+                const value = inputBox.value;
+
+                inputBox.value = value.substring(0, value.length - 1);
+            }
+        </script>
+</body>
+
+</html>
