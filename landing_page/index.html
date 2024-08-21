@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Landing page</title>
+    <link rel="stylesheet" href="page.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">Yummy Cake</div>
+
+
+            <button onclick="nav()">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+            <div id="nav" class="main">
+                <button class="closebt" onclick="nav()">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+                <a href="#home" onclick="nav()">Home</a>
+                <a href="#menu" onclick="nav()">Menu</a>
+                <a href="#contact" onclick="nav()">Contact</a>
+                <a href="#about" onclick="nav()">About</a>
+            </div>
+        </nav>
+    </header>
+    <section id="home" class="hero-sec">
+
+
+        <div class="cake-content">
+            <h1>Discover the magic of <br> "Yummy Cakes"</h1>
+            <p>
+                Your Destination for Irresistible Sweet Treats!
+            </p>
+            <button href="#" class="cake-button">Book Now</button>
+        </div>
+    </section>
+
+    <!-- menu -->
+    <section id="menu" class="menu">
+        <h2>Our Menu</h2>
+        <div class="menu-grid">
+
+
+            <div class="menu-item">
+                <img src="images/coco.jpg" alt="Coco">
+                <div class="m-item-content">
+                    <h3>Blueberry Cake</h3>
+                    <p>A blueberry cake is a delightful dessert, bursting with juicy blueberries in every bite. Its
+                        soft, moist crumb pairs perfectly with a light dusting of powdered sugar or a dollop of whipped
+                        cream.
+                    </p>
+                </div>
+            </div>
+
+            <div class="menu-item">
+                <img src="images/lava cake.jpg" alt="lava">
+                <div class="m-item-content">
+                    <h3>Chocolate Lava Cake</h3>
+                    <p>A decadent dessert with a molten dark chocolate center that flows out when cut, typically served
+                        warm.
+                    </p>
+                </div>
+            </div>
+
+            <div class="menu-item">
+                <img src="images/yellowcake2.jpg" alt="Blackout">
+                <div class="m-item-content">
+                    <h3>Yellow Cake</h3>
+                    <p>A yellow cake is a classic treat, known for its rich, buttery flavor and golden, tender crumb.
+                        It's often paired with chocolate frosting, making it a timeless favorite for any celebration.
+                    </p>
+                </div>
+            </div>
+    </section>
+
+    <section id="about" class="about-sec">
+
+        <div class="about-body">
+            <h2>About Us</h2>
+            <p>
+                Welcome to Yummy Cake, where every bite is a delight! We're a passionate team of bakers and cake lovers
+                dedicated to crafting scrumptious treats that bring joy to our customers. With a focus on quality
+                ingredients, creative flavors, and beautiful presentation, we strive to make every occasion a little
+                sweeter. From classic favorites to custom masterpieces, our goal is to make your taste buds dance with
+                happiness. Visit us today and indulge in the yummiest cakes in town
+            </p>
+        </div>
+
+    </section>
+
+    <section class="contact" id="contact">
+        <h2>Contact Us</h2>
+        <form action="https://formsubmit.co/lalitadogra1612@gmail.com" method="POST">
+            <input class="w100" name="name" type="text" placeholder="Enter Your Name" required>
+            <input class="w100" name="email" type="email" placeholder="Enter Your Email" required>
+            <textarea class="w100" name="Message" placeholder="Enter Your Message" required></textarea>
+            <button class="w100 submit" type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <footer>
+        <span>Developed by Lalita</span>
+    </footer>
+
+    <script>
+        function nav() {
+            var element = document.getElementById("nav");
+            element.classList.toggle("show");
+        }
+    </script>
+
+<script src="https://kit.fontawesome.com/b680263a54.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
